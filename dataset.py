@@ -59,7 +59,6 @@ class Dataset:
             div_fac = 1 / np.max(np.abs(audio)) / 3.0
             audio = audio * div_fac
             # audio = librosa.util.normalize(audio)
-
         return audio, sr
 
     def _audio_random_crop(self, audio, duration):
@@ -93,29 +92,29 @@ class Dataset:
 
     def parallel_audio_processing(self, clean_filename):
 
-        cleanAudio, _ = self.read_audio(clean_filename)
+        clean_audio, _ = self.read_audio(clean_filename)
 
         # remove silent frame from clean audio
-        cleanAudio = self._remove_silent_frames(cleanAudio)
+        clean_audio = self._remove_silent_frames(clean_audio)
 
         noise_filename = self._sample_noise_filename()
 
         # read the noise filename
-        noiseAudio, sr = self.read_audio(noise_filename)
+        noise_audio, sr = self.read_audio(noise_filename)
 
         # remove silent frame from noise audio
-        noiseAudio = self._remove_silent_frames(noiseAudio)
+        noise_audio = self._remove_silent_frames(noise_audio)
 
         # sample random fixed-sized snippets of audio
-        cleanAudio = self._audio_random_crop(cleanAudio, duration=self.audio_max_duration)
+        clean_audio = self._audio_random_crop(clean_audio, duration=self.audio_max_duration)
 
         # add noise to input image
-        noiseInput = self._add_noise_to_clean_audio(cleanAudio, noiseAudio)
+        noiseInput = self._add_noise_to_clean_audio(clean_audio, noise_audio)
 
         # extract stft features from noisy audio
-        noisyInputFE = FeatureExtractor(noiseInput, windowLength=self.window_length, overlap=self.overlap,
-                                        sample_rate=self.sample_rate)
-        noise_spectrogram = noisyInputFE.get_stft_spectrogram()
+        noisy_input_fe = FeatureExtractor(noiseInput, windowLength=self.window_length, overlap=self.overlap,
+                                          sample_rate=self.sample_rate)
+        noise_spectrogram = noisy_input_fe.get_stft_spectrogram()
 
         # Or get the phase angle (in radians)
         # noisy_stft_magnitude, noisy_stft_phase = librosa.magphase(noisy_stft_features)
@@ -123,19 +122,11 @@ class Dataset:
 
         # get the magnitude of the spectral
         noise_magnitude = np.abs(noise_spectrogram)
-        # noise_magnitude = 2 * noise_magnitude / np.sum(scipy.signal.hamming(self.window_length, sym=False))
-
-        # convert to log-spectra
-        # noise_magnitude = np.maximum(noise_magnitude, 1e-10)
-        # noise_magnitude = 20 * np.log10(noise_magnitude * 100)
-
-        # Convert an amplitude spectrogram to dB-scaled spectrogram.
-        # noise_magnitude = librosa.amplitude_to_db(noise_magnitude)
 
         # extract stft features from clean audio
-        cleanAudioFE = FeatureExtractor(cleanAudio, windowLength=self.window_length, overlap=self.overlap,
-                                        sample_rate=self.sample_rate)
-        clean_spectrogram = cleanAudioFE.get_stft_spectrogram()
+        clean_audio_fe = FeatureExtractor(clean_audio, windowLength=self.window_length, overlap=self.overlap,
+                                          sample_rate=self.sample_rate)
+        clean_spectrogram = clean_audio_fe.get_stft_spectrogram()
         # clean_spectrogram = cleanAudioFE.get_mel_spectrogram()
 
         # get the clean phase
@@ -146,13 +137,6 @@ class Dataset:
         # clean_magnitude = 2 * clean_magnitude / np.sum(scipy.signal.hamming(self.window_length, sym=False))
 
         clean_magnitude = self._phase_aware_scaling(clean_magnitude, clean_phase, noise_phase)
-
-        # conver to log-spectra
-        # clean_magnitude = np.maximum(clean_magnitude, 1e-10)
-        # clean_magnitude = 20 * np.log10(clean_magnitude * 100)
-
-        # Convert an amplitude spectrogram to dB-scaled spectrogram.
-        # clean_magnitude = librosa.amplitude_to_db(clean_magnitude)
 
         scaler = StandardScaler(copy=False, with_mean=True, with_std=True)
         noise_magnitude = scaler.fit_transform(noise_magnitude)
@@ -168,10 +152,10 @@ class Dataset:
 
             tfrecord_filename = './dataset/' + prefix + '_' + str(counter) + '.tfrecords'
 
-            # if os.path.isfile(tfrecord_filename):
-            #     print(f"Skipping {tfrecord_filename}")
-            #     counter += 1
-            #     continue
+            if os.path.isfile(tfrecord_filename):
+                print(f"Skipping {tfrecord_filename}")
+                counter += 1
+                continue
 
             writer = tf.io.TFRecordWriter(tfrecord_filename)
             clean_filenames_sublist = self.clean_filenames[i:i + subset_size]

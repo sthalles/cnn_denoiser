@@ -28,12 +28,9 @@ train_dataset.create_tf_record(prefix='train', subset_size=4000)
 
 ## Create Test Set
 clean_test_filenames = mcv.get_test_filenames()
-clean_test_filenames = clean_test_filenames[:1]
-print(clean_test_filenames)
 
 noise_test_filenames = us8K.get_test_filenames()
 noise_test_filenames = noise_test_filenames
-print(noise_test_filenames)
 
-# test_dataset = Dataset(clean_test_filenames, noise_test_filenames, **config)
-# test_dataset.create_tf_record(prefix='test', subset_size=1, parallel=False)
+test_dataset = Dataset(clean_test_filenames, noise_test_filenames, **config)
+test_dataset.create_tf_record(prefix='test', subset_size=1, parallel=False)

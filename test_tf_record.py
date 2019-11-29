@@ -66,6 +66,7 @@ for pred, target, phase in train_dataset:
     print("Min:", np.min(phase), "Max:", np.max(phase))
 
     phase = np.transpose(phase.numpy(), (1, 0))
+    print("Pred:", pred.shape)
     print("Phase:", phase.shape)
     print("target:", target.shape)
     audio = revert_features_to_audio(target.numpy(), phase)
