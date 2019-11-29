@@ -4,6 +4,7 @@ import os
 
 np.random.seed(999)
 
+
 class UrbanSound8K:
     def __init__(self, basepath, *, val_dataset_size, class_ids=None):
         self.basepath = basepath
@@ -64,5 +65,4 @@ class UrbanSound8K:
         np.random.shuffle(urbansound_test_filenames)
 
         print("# of Noise testing files:", len(urbansound_test_filenames))
-
         return urbansound_test_filenames

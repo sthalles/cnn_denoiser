@@ -1,12 +1,9 @@
 import tensorflow as tf
 import numpy as np
-import librosa
 from utils import play
-from feature_extractor import FeatureExtractor
-import scipy
+from data_processing.feature_extractor import FeatureExtractor
 
-
-train_tfrecords_filenames = './dataset/test_0.tfrecords'
+train_tfrecords_filenames = './data_processing/test_0.tfrecords'
 
 def tf_record_parser(record):
     keys_to_features = {

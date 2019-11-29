@@ -43,6 +43,14 @@ def add_noise_to_clean_audio(clean_audio, noise_signal):
     noisyAudio = clean_audio + np.sqrt(speech_power / noise_power) * noiseSegment
     return noisyAudio
 
+def read_audio(filepath, sample_rate, normalize=True):
+    audio, sr = librosa.load(filepath, sr=sample_rate)
+    if normalize is True:
+        div_fac = 1 / np.max(np.abs(audio)) / 3.0
+        audio = audio * div_fac
+        # audio = librosa.util.normalize(audio)
+    return audio, sr
+
 
 def prepare_input_features(stft_features, numSegments, numFeatures):
     noisySTFT = np.concatenate([stft_features[:, 0:numSegments - 1], stft_features], axis=1)

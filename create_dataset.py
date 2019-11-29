@@ -1,6 +1,6 @@
-from mozilla_common_voice import MozillaCommonVoiceDataset
-from urban_sound_8K import UrbanSound8K
-from dataset import Dataset
+from data_processing.mozilla_common_voice import MozillaCommonVoiceDataset
+from data_processing.urban_sound_8K import UrbanSound8K
+from data_processing.dataset import Dataset
 import warnings
 
 warnings.filterwarnings(action='ignore')
@@ -34,3 +34,4 @@ noise_test_filenames = noise_test_filenames
 
 test_dataset = Dataset(clean_test_filenames, noise_test_filenames, **config)
 test_dataset.create_tf_record(prefix='test', subset_size=1, parallel=False)
+

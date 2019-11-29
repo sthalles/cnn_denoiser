@@ -21,9 +21,10 @@ class FeatureExtractor:
 
     def get_mel_spectrogram(self):
         return librosa.feature.melspectrogram(self.audio, sr=self.sample_rate, power=2.0, pad_mode='reflect',
-                                           n_fft=self.ffT_length, hop_length=self.overlap, center=True)
+                                              n_fft=self.ffT_length, hop_length=self.overlap, center=True)
 
     def get_audio_from_mel_spectrogram(self, M):
-        return librosa.feature.inverse.mel_to_audio(M, sr=self.sample_rate, n_fft=self.ffT_length, hop_length=self.overlap,
-                                             win_length=self.window_length, window=self.window,
-                                             center=True, pad_mode='reflect', power=2.0, n_iter=32, length=None)
+        return librosa.feature.inverse.mel_to_audio(M, sr=self.sample_rate, n_fft=self.ffT_length,
+                                                    hop_length=self.overlap,
+                                                    win_length=self.window_length, window=self.window,
+                                                    center=True, pad_mode='reflect', power=2.0, n_iter=32, length=None)

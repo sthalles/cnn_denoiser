@@ -1,23 +1,17 @@
 import librosa
 import numpy as np
 import math
-from feature_extractor import FeatureExtractor
+from data_processing.feature_extractor import FeatureExtractor
 from utils import prepare_input_features
 import multiprocessing
-import pickle
 import os
-from utils import play, get_tf_feature
+from utils import get_tf_feature, read_audio
 import tensorflow as tf
-from utils import revert_features_to_audio
-import scipy
-from sklearn import preprocessing
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import StandardScaler
+
 
 np.random.seed(999)
 tf.random.set_seed(999)
-
-NOISE_AUDIO_BUFFER = {}
 
 
 class Dataset:
@@ -45,21 +39,7 @@ class Dataset:
         return clean_spectral_magnitude * np.cos(clean_phase - noise_phase)
 
     def get_noisy_audio(self, *, filename):
-        if filename not in NOISE_AUDIO_BUFFER:
-            # print(f"Reading: {filename} for the first time.")
-            noise_audio = self.read_audio(filename)
-            NOISE_AUDIO_BUFFER[filename] = noise_audio
-            return noise_audio
-        else:
-            return NOISE_AUDIO_BUFFER[filename]
-
-    def read_audio(self, filepath, normalize=True):
-        audio, sr = librosa.load(filepath, sr=self.sample_rate)
-        if normalize is True:
-            div_fac = 1 / np.max(np.abs(audio)) / 3.0
-            audio = audio * div_fac
-            # audio = librosa.util.normalize(audio)
-        return audio, sr
+        return read_audio(filename, self.sample_rate)
 
     def _audio_random_crop(self, audio, duration):
         audio_duration_secs = librosa.core.get_duration(audio, self.sample_rate)
@@ -92,7 +72,7 @@ class Dataset:
 
     def parallel_audio_processing(self, clean_filename):
 
-        clean_audio, _ = self.read_audio(clean_filename)
+        clean_audio, _ = read_audio(clean_filename, self.sample_rate)
 
         # remove silent frame from clean audio
         clean_audio = self._remove_silent_frames(clean_audio)
@@ -100,7 +80,7 @@ class Dataset:
         noise_filename = self._sample_noise_filename()
 
         # read the noise filename
-        noise_audio, sr = self.read_audio(noise_filename)
+        noise_audio, sr = read_audio(noise_filename, self.sample_rate)
 
         # remove silent frame from noise audio
         noise_audio = self._remove_silent_frames(noise_audio)
@@ -150,7 +130,7 @@ class Dataset:
 
         for i in range(0, len(self.clean_filenames), subset_size):
 
-            tfrecord_filename = './dataset/' + prefix + '_' + str(counter) + '.tfrecords'
+            tfrecord_filename = './records/' + prefix + '_' + str(counter) + '.tfrecords'
 
             if os.path.isfile(tfrecord_filename):
                 print(f"Skipping {tfrecord_filename}")
