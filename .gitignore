@@ -2,3 +2,9 @@ dataset/
 *.tfrecord
 *.wav
 my_dir/
+my_dir*/
+vrau/
+8k_tuner/
+old/
+*.v2
+*.keras
