@@ -119,33 +119,61 @@ def _worker_max_mag(noisy_path_str: str) -> float | None:
         return None
 
 
-def _worker_build_example(args_tuple: tuple) -> tuple[float, list[tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]]]:
-    """Returns (snr, list of (noisy_real, noisy_imag, clean_real, clean_imag) tuples)."""
-    clean_path_str, noisy_path_str, snr, max_mag, seg_samples, hop_samples = args_tuple
+def _worker_build_shard(args_tuple) -> tuple[int, int]:
+    """Each worker is given a contiguous chunk of pairs and a unique worker_id.
+    It writes its own TFRecord shards directly, with no data crossing the process
+    boundary. Returns (n_examples, n_shards) for this worker.
+
+    Shard naming: <out_dir>/<prefix>-w{worker_id:03d}-{shard:05d}.tfrecord
+    """
+    (chunk, max_mag, seg_samples, hop_samples,
+     out_dir_str, prefix, worker_id, samples_per_shard) = args_tuple
+    out_dir = Path(out_dir_str)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    n_examples = 0
+    shard_idx = 0
+    in_shard = 0
+    writer = tf.io.TFRecordWriter(
+        str(out_dir / f"{prefix}-w{worker_id:03d}-{shard_idx:05d}.tfrecord"))
+
     try:
-        clean = _load_audio(Path(clean_path_str))
-        noisy = _load_audio(Path(noisy_path_str))
-    except Exception as e:
-        print(f"skip {noisy_path_str}: {e}", file=sys.stderr)
-        return snr, []
-    min_len = min(len(clean), len(noisy))
-    clean = clean[:min_len]
-    noisy = noisy[:min_len]
-    starts = _segment_starts(min_len, seg_samples, hop_samples)
-    inv = 1.0 / max(max_mag, 1e-8)
-    out = []
-    for s in starts:
-        c_seg = clean[s:s + seg_samples]
-        n_seg = noisy[s:s + seg_samples]
-        c_stft = compute_stft(c_seg)
-        n_stft = compute_stft(n_seg)
-        out.append((
-            (np.real(n_stft) * inv).astype(np.float32),
-            (np.imag(n_stft) * inv).astype(np.float32),
-            (np.real(c_stft) * inv).astype(np.float32),
-            (np.imag(c_stft) * inv).astype(np.float32),
-        ))
-    return snr, out
+        for clean_path_str, noisy_path_str, snr in chunk:
+            try:
+                clean = _load_audio(Path(clean_path_str))
+                noisy = _load_audio(Path(noisy_path_str))
+            except Exception as e:
+                print(f"[w{worker_id}] skip {noisy_path_str}: {e}", file=sys.stderr)
+                continue
+            min_len = min(len(clean), len(noisy))
+            clean = clean[:min_len]
+            noisy = noisy[:min_len]
+            starts = _segment_starts(min_len, seg_samples, hop_samples)
+            inv = 1.0 / max(max_mag, 1e-8)
+            for s in starts:
+                c_seg = clean[s:s + seg_samples]
+                n_seg = noisy[s:s + seg_samples]
+                c_stft = compute_stft(c_seg)
+                n_stft = compute_stft(n_seg)
+                record = serialize_example(
+                    (np.real(n_stft) * inv).astype(np.float32),
+                    (np.imag(n_stft) * inv).astype(np.float32),
+                    (np.real(c_stft) * inv).astype(np.float32),
+                    (np.imag(c_stft) * inv).astype(np.float32),
+                    snr,
+                )
+                if in_shard >= samples_per_shard:
+                    writer.close()
+                    shard_idx += 1
+                    in_shard = 0
+                    writer = tf.io.TFRecordWriter(
+                        str(out_dir / f"{prefix}-w{worker_id:03d}-{shard_idx:05d}.tfrecord"))
+                writer.write(record)
+                in_shard += 1
+                n_examples += 1
+    finally:
+        writer.close()
+    return n_examples, shard_idx + 1
 
 
 # ---- Pair collection ----
@@ -170,28 +198,6 @@ def collect_pairs(clean_dir: Path, noisy_dir: Path, manifest: dict, split: str
     return pairs
 
 
-def shard_writer_factory(out_dir: Path, prefix: str, samples_per_shard: int):
-    out_dir.mkdir(parents=True, exist_ok=True)
-    state = {"shard_idx": 0, "in_shard": 0,
-             "writer": tf.io.TFRecordWriter(str(out_dir / f"{prefix}-00000.tfrecord"))}
-
-    def write(record_bytes: bytes) -> None:
-        if state["in_shard"] >= samples_per_shard:
-            state["writer"].close()
-            state["shard_idx"] += 1
-            state["in_shard"] = 0
-            state["writer"] = tf.io.TFRecordWriter(
-                str(out_dir / f"{prefix}-{state['shard_idx']:05d}.tfrecord"))
-        state["writer"].write(record_bytes)
-        state["in_shard"] += 1
-
-    def close() -> int:
-        state["writer"].close()
-        return state["shard_idx"] + 1
-
-    return write, close
-
-
 def process_split(pairs: list[tuple[Path, Path, float]],
                   out_dir: Path,
                   max_mag: float,
@@ -200,16 +206,31 @@ def process_split(pairs: list[tuple[Path, Path, float]],
                   seg_samples: int,
                   hop_samples: int,
                   split: str) -> tuple[int, int]:
-    write, close = shard_writer_factory(out_dir / split, split, samples_per_shard)
+    """Each worker is assigned a contiguous chunk of the pairs and writes its own
+    shards independently — no large objects cross the process boundary."""
+    split_dir = out_dir / split
+    split_dir.mkdir(parents=True, exist_ok=True)
+
+    pair_tuples = [(str(c), str(n), s) for c, n, s in pairs]
+    # Round-robin split so each worker has a balanced workload.
+    chunks: list[list] = [[] for _ in range(workers)]
+    for i, item in enumerate(pair_tuples):
+        chunks[i % workers].append(item)
+
+    args_per_worker = [
+        (chunk, max_mag, seg_samples, hop_samples,
+         str(split_dir), split, worker_id, samples_per_shard)
+        for worker_id, chunk in enumerate(chunks)
+    ]
+
     n_examples = 0
-    work_items = [(str(c), str(n), s, max_mag, seg_samples, hop_samples) for c, n, s in pairs]
+    n_shards = 0
     with ProcessPoolExecutor(max_workers=workers) as pool:
-        for snr, segs in tqdm(pool.map(_worker_build_example, work_items, chunksize=4),
-                              total=len(work_items), desc=f"build [{split}]"):
-            for nr, ni, cr, ci in segs:
-                write(serialize_example(nr, ni, cr, ci, snr))
-                n_examples += 1
-    n_shards = close()
+        with tqdm(total=workers, desc=f"build [{split}] workers") as pbar:
+            for n_ex, n_sh in pool.map(_worker_build_shard, args_per_worker):
+                n_examples += n_ex
+                n_shards += n_sh
+                pbar.update(1)
     return n_examples, n_shards
 
 

@@ -22,6 +22,8 @@ search_results_*/
 # TFRecords directories
 tfrecords/
 tfrecords_v2/
+tfrecords_park/
+tfrecords_*/
 
 # Archive of stale artifacts (large; do not commit)
 archive/

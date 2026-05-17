@@ -48,11 +48,15 @@ from scripts.models.unet_crm import (
 from scripts.models.park_rced import (
     build_park_rced, log_mag_mse_loss, log_mag_l1_metric,
 )  # noqa: E402
+from scripts.models.conformer_crn import (
+    build_conformer_crn, crm_combined_loss,
+    mask_mse_metric as conformer_mask_mse,
+)  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--model", choices=["unet", "park"], required=True)
+    p.add_argument("--model", choices=["unet", "park", "conformer"], required=True)
     p.add_argument("--tfrecord-root", type=Path, required=True)
     p.add_argument("--out-dir", type=Path, required=True)
     p.add_argument("--epochs", type=int, default=60)
@@ -64,6 +68,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--reduce-lr-factor", type=float, default=0.5)
     p.add_argument("--min-lr", type=float, default=1e-6)
     p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--jit", action="store_true",
+                   help="Enable XLA JIT compilation (fuses small kernels for tensor cores).")
     return p.parse_args()
 
 
@@ -82,6 +88,10 @@ def build_model_and_loss(args, input_shape):
         model = build_park_rced(input_shape=input_shape)
         loss = log_mag_mse_loss
         metrics = [log_mag_l1_metric()]
+    elif args.model == "conformer":
+        model = build_conformer_crn(input_shape=input_shape)
+        loss = crm_combined_loss()
+        metrics = [conformer_mask_mse()]
     else:
         raise ValueError(args.model)
     return model, loss, metrics
@@ -99,8 +109,8 @@ def main() -> None:
         json.dumps({k: (str(v) if isinstance(v, Path) else v) for k, v in vars(args).items()}, indent=2)
     )
 
-    # Datasets
-    if args.model == "unet":
+    # Datasets — cRM target for unet & conformer, magnitude for park.
+    if args.model in ("unet", "conformer"):
         train_ds, val_ds, info = make_crm_dataset(
             args.tfrecord_root, batch_size=args.batch_size, repeat=True
         )
@@ -127,7 +137,7 @@ def main() -> None:
         weight_decay=args.weight_decay,
         clipnorm=1.0,
     )
-    model.compile(optimizer=optimizer, loss=loss, metrics=metrics, jit_compile=False)
+    model.compile(optimizer=optimizer, loss=loss, metrics=metrics, jit_compile=bool(args.jit))
 
     callbacks = [
         tf.keras.callbacks.ModelCheckpoint(

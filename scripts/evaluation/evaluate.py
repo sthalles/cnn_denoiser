@@ -49,7 +49,7 @@ NOISY_RE = re.compile(r"noisy(\d+)_SNRdb_([\d.]+)_(clnsp\d+)\.wav$")
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--model", choices=["unet", "park"], required=True)
+    p.add_argument("--model", choices=["unet", "park", "conformer"], required=True)
     p.add_argument("--weights", type=Path, required=True)
     p.add_argument("--tfrecord-root", type=Path, required=True)
     p.add_argument("--clean-dir", type=Path, required=True)
@@ -160,7 +160,15 @@ def main() -> None:
     max_mag = float(info["max_mag"])
     manifest = json.loads(args.manifest.read_text())
 
-    model = tf.keras.models.load_model(str(args.weights), compile=False)
+    # Conformer's Lambda layers carry closures that don't round-trip through
+    # keras saving; rebuild the architecture from code and load weights instead.
+    if args.model == "conformer":
+        from scripts.models.conformer_crn import build_conformer_crn  # noqa: E402
+        model = build_conformer_crn(input_shape=(Config.N_FREQ_BINS, Config.N_TIME_FRAMES, 2))
+        model.load_weights(str(args.weights))
+    else:
+        # safe_mode=False so Lambda layers (used in U-Net) can be deserialized.
+        model = tf.keras.models.load_model(str(args.weights), compile=False, safe_mode=False)
     print(f"Loaded {args.model} from {args.weights}")
 
     val_files = collect_val_files(args.noisy_dir, manifest)
@@ -187,7 +195,8 @@ def main() -> None:
             continue
         L = min(len(clean), len(noisy))
         clean, noisy = clean[:L], noisy[:L]
-        if args.model == "unet":
+        if args.model in ("unet", "conformer"):
+            # Both produce a cRM; same downstream reconstruction.
             est = denoise_unet(model, noisy, max_mag)
         else:
             est = denoise_park(model, noisy, max_mag)
