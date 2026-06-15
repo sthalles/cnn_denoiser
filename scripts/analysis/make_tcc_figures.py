@@ -219,8 +219,51 @@ def fig_waveforms() -> None:
     print("wrote fig_waveforms.png")
 
 
+def fig_architecture() -> None:
+    """Schematic of the 2D R-CED filter pyramid with mirror skip connections."""
+    from matplotlib.patches import Rectangle, FancyArrowPatch
+    filters = [12, 16, 20, 24, 32, 32, 32, 32, 24, 24, 20, 20, 16, 16, 12, 12]
+    n = len(filters)
+    maxf = max(filters)
+
+    fig, ax = plt.subplots(figsize=(11.5, 4.2))
+    for i, f in enumerate(filters):
+        h = f / maxf
+        color = "#2ca02c" if i < n // 2 else "#1f4e79"
+        ax.add_patch(Rectangle((i - 0.35, -h / 2), 0.7, h, color=color, alpha=0.85))
+        ax.text(i, -h / 2 - 0.05, str(f), ha="center", va="top", fontsize=7)
+    # mirror skip connections: decoder layer i <- encoder layer n-1-i
+    for i in range(n // 2 + 1, n):
+        j = n - 1 - i
+        arc = FancyArrowPatch((j, filters[j] / maxf / 2), (i, filters[i] / maxf / 2),
+                              connectionstyle="arc3,rad=-0.45", arrowstyle="-|>",
+                              color="#d62728", lw=1.0, alpha=0.6, mutation_scale=9)
+        ax.add_patch(arc)
+    # input / output blocks
+    ax.text(-1.7, 0, "Espectrograma\nruidoso\n(257×251×1)", ha="center", va="center", fontsize=8)
+    ax.text(n + 0.7, 0, "Espectrograma\nestimado\n(257×251×1)", ha="center", va="center", fontsize=8)
+    ax.annotate("", xy=(-0.45, 0), xytext=(-0.95, 0), arrowprops=dict(arrowstyle="-|>", color="k"))
+    ax.annotate("", xy=(n - 0.1, 0), xytext=(n - 0.55, 0), arrowprops=dict(arrowstyle="-|>", color="k"))
+
+    handles = [Rectangle((0, 0), 1, 1, color="#2ca02c", alpha=0.85),
+               Rectangle((0, 0), 1, 1, color="#1f4e79", alpha=0.85),
+               FancyArrowPatch((0, 0), (1, 0), color="#d62728")]
+    ax.legend(handles, ["Codificador (8 camadas)", "Decodificador (8 camadas)",
+                        "Conexão de salto (skip)"], loc="lower center",
+              ncol=3, bbox_to_anchor=(0.5, -0.12), frameon=False)
+    ax.text(n / 2 - 0.5, 0.62, "16 camadas Conv2D (padding \"same\") + BatchNorm + ReLU",
+            ha="center", fontsize=9)
+    ax.set_xlim(-2.7, n + 1.7)
+    ax.set_ylim(-0.8, 0.75)
+    ax.axis("off")
+    fig.savefig(OUT_DIR / "fig_architecture.png")
+    plt.close(fig)
+    print("wrote fig_architecture.png")
+
+
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    fig_architecture()
     fig_dataset_noise()
     fig_training_curve()
     fig_results_metrics()
