@@ -201,6 +201,10 @@ def fig_spectrograms() -> None:
 def fig_waveforms() -> None:
     ex = _pick_example()
     base, snr = ex["base"], ex["snr"]
+    # ganho de visualizacao: amplifica as formas de onda para realcar o ruido de
+    # fundo (os picos de fala saturam para fora do eixo). Aplicado igualmente as
+    # tres faixas, preservando a comparacao entre elas.
+    gain = 4.0
     rows = [("noisy", f"Ruidoso ({snr:.0f} dB)", "#9e9e9e"),
             ("park", "Park R-CED", "#2ca02c"),
             ("clean", "Limpo (referência)", "#1f4e79")]
@@ -208,7 +212,7 @@ def fig_waveforms() -> None:
     for ax, (kind, title, color) in zip(axes, rows):
         a = _load(base, kind)
         t = np.arange(len(a)) / Config.SAMPLE_RATE
-        ax.plot(t, a, color=color, lw=0.6)
+        ax.plot(t, a * gain, color=color, lw=0.6)
         ax.set_ylabel("Amplitude")
         ax.set_title(title, fontsize=10, loc="left")
         ax.set_ylim(-1.05, 1.05)
