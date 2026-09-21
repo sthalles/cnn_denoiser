@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 3467,
+    "arquivo": "noisy3467_SNRdb_10.0_clnsp3467.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.9999956770955,
+    "sdr_depois": 18.852672694806948,
+    "melhora": 8.852677017711448
+  },
+  {
+    "id": 3517,
+    "arquivo": "noisy3517_SNRdb_15.0_clnsp3517.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000277154348343,
+    "sdr_depois": 19.117273596168168,
+    "melhora": 4.1169964418198255
+  },
+  {
+    "id": 3347,
+    "arquivo": "noisy3347_SNRdb_10.0_clnsp3347.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000001963834473,
+    "sdr_depois": 17.94210957505387,
+    "melhora": 7.942107611219397
+  },
+  {
+    "id": 3388,
+    "arquivo": "noisy3388_SNRdb_5.0_clnsp3388.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999989256430002,
+    "sdr_depois": 12.592669454358118,
+    "melhora": 7.592680197928116
+  },
+  {
+    "id": 3277,
+    "arquivo": "noisy3277_SNRdb_10.0_clnsp3277.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000014275398721,
+    "sdr_depois": 15.017513654506152,
+    "melhora": 5.017499379107431
+  },
+  {
+    "id": 3246,
+    "arquivo": "noisy3246_SNRdb_15.0_clnsp3246.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000008143920846,
+    "sdr_depois": 18.149912625187753,
+    "melhora": 3.1499044812669066
+  },
+  {
+    "id": 3400,
+    "arquivo": "noisy3400_SNRdb_15.0_clnsp3400.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999985198063664,
+    "sdr_depois": 20.286918302614904,
+    "melhora": 5.28693310455124
+  },
+  {
+    "id": 3281,
+    "arquivo": "noisy3281_SNRdb_15.0_clnsp3281.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999933401910539,
+    "sdr_depois": 20.339394529781845,
+    "melhora": 5.3394611278713064
+  },
+  {
+    "id": 3306,
+    "arquivo": "noisy3306_SNRdb_10.0_clnsp3306.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000006285979042,
+    "sdr_depois": 16.459449299383987,
+    "melhora": 6.459443013404945
+  },
+  {
+    "id": 3480,
+    "arquivo": "noisy3480_SNRdb_10.0_clnsp3480.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999997183289464,
+    "sdr_depois": 17.440449494101163,
+    "melhora": 7.440452310811699
+  },
+  {
+    "id": 3416,
+    "arquivo": "noisy3416_SNRdb_15.0_clnsp3416.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000020649494637,
+    "sdr_depois": 21.57521594223197,
+    "melhora": 6.575195292737334
+  },
+  {
+    "id": 3264,
+    "arquivo": "noisy3264_SNRdb_10.0_clnsp3264.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999962409950031,
+    "sdr_depois": 18.056111628303768,
+    "melhora": 8.056149218353736
+  },
+  {
+    "id": 3410,
+    "arquivo": "noisy3410_SNRdb_0.0_clnsp3410.wav",
+    "snr": 0.0,
+    "sdr_antes": 2.8814240610681616e-06,
+    "sdr_depois": 13.453937587352245,
+    "melhora": 13.453934705928184
+  },
+  {
+    "id": 3483,
+    "arquivo": "noisy3483_SNRdb_15.0_clnsp3483.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.00000465264365,
+    "sdr_depois": 22.088529863395646,
+    "melhora": 7.088525210751996
+  },
+  {
+    "id": 3574,
+    "arquivo": "noisy3574_SNRdb_15.0_clnsp3574.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999988650924516,
+    "sdr_depois": 18.371572098264863,
+    "melhora": 3.371583447340347
+  },
+  {
+    "id": 3257,
+    "arquivo": "noisy3257_SNRdb_0.0_clnsp3257.wav",
+    "snr": 0.0,
+    "sdr_antes": 4.1911649241234364e-06,
+    "sdr_depois": 11.971298386501125,
+    "melhora": 11.9712941953362
+  },
+  {
+    "id": 3309,
+    "arquivo": "noisy3309_SNRdb_15.0_clnsp3309.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000016430550708,
+    "sdr_depois": 22.343043106799023,
+    "melhora": 7.343026676248314
+  },
+  {
+    "id": 3581,
+    "arquivo": "noisy3581_SNRdb_15.0_clnsp3581.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999963004260445,
+    "sdr_depois": 18.392097214970427,
+    "melhora": 3.3921342107099814
+  },
+  {
+    "id": 3452,
+    "arquivo": "noisy3452_SNRdb_10.0_clnsp3452.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.00002665245852,
+    "sdr_depois": 22.11619139207706,
+    "melhora": 12.11616473961854
+  },
+  {
+    "id": 3364,
+    "arquivo": "noisy3364_SNRdb_5.0_clnsp3364.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.9999902432539685,
+    "sdr_depois": 12.818502725364798,
+    "melhora": 7.81851248211083
+  },
+  {
+    "id": 3472,
+    "arquivo": "noisy3472_SNRdb_15.0_clnsp3472.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000021962318407,
+    "sdr_depois": 19.773396927050552,
+    "melhora": 4.773374964732145
+  },
+  {
+    "id": 3500,
+    "arquivo": "noisy3500_SNRdb_10.0_clnsp3500.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.99998559214542,
+    "sdr_depois": 17.2278085960724,
+    "melhora": 7.22782300392698
+  },
+  {
+    "id": 3398,
+    "arquivo": "noisy3398_SNRdb_5.0_clnsp3398.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999981917266175,
+    "sdr_depois": 11.296195012083047,
+    "melhora": 6.2962130948168715
+  },
+  {
+    "id": 3449,
+    "arquivo": "noisy3449_SNRdb_10.0_clnsp3449.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999974852335015,
+    "sdr_depois": 17.05162581556669,
+    "melhora": 7.051650963231676
+  },
+  {
+    "id": 3549,
+    "arquivo": "noisy3549_SNRdb_10.0_clnsp3549.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000011197526913,
+    "sdr_depois": 17.744718553366322,
+    "melhora": 7.7447073558394095
+  },
+  {
+    "id": 3321,
+    "arquivo": "noisy3321_SNRdb_5.0_clnsp3321.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000013663409653,
+    "sdr_depois": 19.72072640274719,
+    "melhora": 14.720712739337536
+  },
+  {
+    "id": 3465,
+    "arquivo": "noisy3465_SNRdb_0.0_clnsp3465.wav",
+    "snr": 0.0,
+    "sdr_antes": -8.64425654109157e-06,
+    "sdr_depois": 12.636482515940084,
+    "melhora": 12.636491160196625
+  },
+  {
+    "id": 3535,
+    "arquivo": "noisy3535_SNRdb_15.0_clnsp3535.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.00005712743069,
+    "sdr_depois": 22.42331706367922,
+    "melhora": 7.423259936248531
+  },
+  {
+    "id": 3248,
+    "arquivo": "noisy3248_SNRdb_0.0_clnsp3248.wav",
+    "snr": 0.0,
+    "sdr_antes": 4.453110181042984e-06,
+    "sdr_depois": 9.361283990808914,
+    "melhora": 9.361279537698733
+  },
+  {
+    "id": 3536,
+    "arquivo": "noisy3536_SNRdb_5.0_clnsp3536.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000005882489934,
+    "sdr_depois": 14.70435774394771,
+    "melhora": 9.704351861457777
+  },
+  {
+    "id": 3382,
+    "arquivo": "noisy3382_SNRdb_5.0_clnsp3382.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000068633753999,
+    "sdr_depois": 12.677760249310527,
+    "melhora": 7.677691615556528
+  },
+  {
+    "id": 3438,
+    "arquivo": "noisy3438_SNRdb_5.0_clnsp3438.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.0000098864285345,
+    "sdr_depois": 11.089031725992665,
+    "melhora": 6.089021839564131
+  },
+  {
+    "id": 3452,
+    "arquivo": "noisy3452_SNRdb_5.0_clnsp3452.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000004873807304,
+    "sdr_depois": 21.19900613601469,
+    "melhora": 16.19900126220739
+  },
+  {
+    "id": 3548,
+    "arquivo": "noisy3548_SNRdb_15.0_clnsp3548.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000026743283748,
+    "sdr_depois": 19.881034918763238,
+    "melhora": 4.88100817547949
+  },
+  {
+    "id": 3463,
+    "arquivo": "noisy3463_SNRdb_0.0_clnsp3463.wav",
+    "snr": 0.0,
+    "sdr_antes": 6.322858842524978e-06,
+    "sdr_depois": 14.477578678274819,
+    "melhora": 14.477572355415976
+  },
+  {
+    "id": 3340,
+    "arquivo": "noisy3340_SNRdb_10.0_clnsp3340.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999997576212253,
+    "sdr_depois": 21.38966474137094,
+    "melhora": 11.389667165158686
+  },
+  {
+    "id": 3389,
+    "arquivo": "noisy3389_SNRdb_5.0_clnsp3389.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000003100490967,
+    "sdr_depois": 12.871352577895916,
+    "melhora": 7.871349477404949
+  },
+  {
+    "id": 3405,
+    "arquivo": "noisy3405_SNRdb_10.0_clnsp3405.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999987229303727,
+    "sdr_depois": 15.62303532491249,
+    "melhora": 5.6230480956087625
+  },
+  {
+    "id": 3463,
+    "arquivo": "noisy3463_SNRdb_10.0_clnsp3463.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.00002212797434,
+    "sdr_depois": 19.593514784574072,
+    "melhora": 9.593492656599732
+  },
+  {
+    "id": 3387,
+    "arquivo": "noisy3387_SNRdb_0.0_clnsp3387.wav",
+    "snr": 0.0,
+    "sdr_antes": -1.5716844769238774e-06,
+    "sdr_depois": 8.789658915237496,
+    "melhora": 8.789660486921973
+  },
+  {
+    "id": 3564,
+    "arquivo": "noisy3564_SNRdb_0.0_clnsp3564.wav",
+    "snr": 0.0,
+    "sdr_antes": 8.120379837629252e-06,
+    "sdr_depois": 11.501276432170982,
+    "melhora": 11.501268311791145
+  },
+  {
+    "id": 3367,
+    "arquivo": "noisy3367_SNRdb_5.0_clnsp3367.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000010027732252,
+    "sdr_depois": 19.32532909359005,
+    "melhora": 14.325319065857798
+  },
+  {
+    "id": 3291,
+    "arquivo": "noisy3291_SNRdb_5.0_clnsp3291.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000006158843942,
+    "sdr_depois": 20.33492832923677,
+    "melhora": 15.33492217039283
+  },
+  {
+    "id": 3458,
+    "arquivo": "noisy3458_SNRdb_10.0_clnsp3458.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999999475332533,
+    "sdr_depois": 16.300118825475177,
+    "melhora": 6.300119350142644
+  },
+  {
+    "id": 3280,
+    "arquivo": "noisy3280_SNRdb_5.0_clnsp3280.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.99999170521869,
+    "sdr_depois": 18.735461875523406,
+    "melhora": 13.735470170304716
+  },
+  {
+    "id": 3350,
+    "arquivo": "noisy3350_SNRdb_0.0_clnsp3350.wav",
+    "snr": 0.0,
+    "sdr_antes": -9.953987277319022e-06,
+    "sdr_depois": 11.30202445042642,
+    "melhora": 11.302034404413696
+  },
+  {
+    "id": 3328,
+    "arquivo": "noisy3328_SNRdb_5.0_clnsp3328.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999983152869965,
+    "sdr_depois": 11.429209222341543,
+    "melhora": 6.429226069471578
+  },
+  {
+    "id": 3379,
+    "arquivo": "noisy3379_SNRdb_5.0_clnsp3379.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.00000956415959,
+    "sdr_depois": 21.758098462024087,
+    "melhora": 16.758088897864496
+  },
+  {
+    "id": 3592,
+    "arquivo": "noisy3592_SNRdb_5.0_clnsp3592.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999995110534953,
+    "sdr_depois": 17.35894591332227,
+    "melhora": 12.358950802787316
+  },
+  {
+    "id": 3431,
+    "arquivo": "noisy3431_SNRdb_0.0_clnsp3431.wav",
+    "snr": 0.0,
+    "sdr_antes": -1.2835415872623996e-05,
+    "sdr_depois": 10.65890802052435,
+    "melhora": 10.658920855940224
+  },
+  {
+    "id": 3434,
+    "arquivo": "noisy3434_SNRdb_5.0_clnsp3434.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000011044612048,
+    "sdr_depois": 13.241839571869088,
+    "melhora": 8.24182852725704
+  },
+  {
+    "id": 3545,
+    "arquivo": "noisy3545_SNRdb_15.0_clnsp3545.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.99998632677794,
+    "sdr_depois": 19.463339542650534,
+    "melhora": 4.463353215872594
+  },
+  {
+    "id": 3258,
+    "arquivo": "noisy3258_SNRdb_15.0_clnsp3258.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000009983730278,
+    "sdr_depois": 23.064245697997343,
+    "melhora": 8.064235714267065
+  },
+  {
+    "id": 3375,
+    "arquivo": "noisy3375_SNRdb_10.0_clnsp3375.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.00000366649038,
+    "sdr_depois": 17.726930203399025,
+    "melhora": 7.726926536908644
+  },
+  {
+    "id": 3586,
+    "arquivo": "noisy3586_SNRdb_15.0_clnsp3586.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999984705056892,
+    "sdr_depois": 19.753507193263562,
+    "melhora": 4.75352248820667
+  },
+  {
+    "id": 3250,
+    "arquivo": "noisy3250_SNRdb_0.0_clnsp3250.wav",
+    "snr": 0.0,
+    "sdr_antes": 3.6329914441808975e-06,
+    "sdr_depois": 11.337575467250353,
+    "melhora": 11.33757183425891
+  },
+  {
+    "id": 3560,
+    "arquivo": "noisy3560_SNRdb_5.0_clnsp3560.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000001730437214,
+    "sdr_depois": 14.977653674180985,
+    "melhora": 9.977651943743771
+  },
+  {
+    "id": 3383,
+    "arquivo": "noisy3383_SNRdb_5.0_clnsp3383.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000049008301081,
+    "sdr_depois": 14.282856783823663,
+    "melhora": 9.282807775522581
+  },
+  {
+    "id": 3328,
+    "arquivo": "noisy3328_SNRdb_10.0_clnsp3328.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000007071824479,
+    "sdr_depois": 15.182129007292119,
+    "melhora": 5.18212193546764
+  },
+  {
+    "id": 3359,
+    "arquivo": "noisy3359_SNRdb_0.0_clnsp3359.wav",
+    "snr": 0.0,
+    "sdr_antes": 4.71505570567524e-06,
+    "sdr_depois": 7.7634964811842,
+    "melhora": 7.763491766128494
+  },
+  {
+    "id": 3393,
+    "arquivo": "noisy3393_SNRdb_15.0_clnsp3393.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000005139486984,
+    "sdr_depois": 19.58415494312299,
+    "melhora": 4.584149803636006
+  },
+  {
+    "id": 3479,
+    "arquivo": "noisy3479_SNRdb_10.0_clnsp3479.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.00002730731465,
+    "sdr_depois": 16.797934046305475,
+    "melhora": 6.797906738990825
+  },
+  {
+    "id": 3568,
+    "arquivo": "noisy3568_SNRdb_15.0_clnsp3568.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999989937822477,
+    "sdr_depois": 18.493090903718905,
+    "melhora": 3.493100965896428
+  },
+  {
+    "id": 3586,
+    "arquivo": "noisy3586_SNRdb_0.0_clnsp3586.wav",
+    "snr": 0.0,
+    "sdr_antes": -2.6194727865702875e-07,
+    "sdr_depois": 8.540212399529137,
+    "melhora": 8.540212661476415
+  },
+  {
+    "id": 3364,
+    "arquivo": "noisy3364_SNRdb_0.0_clnsp3364.wav",
+    "snr": 0.0,
+    "sdr_antes": -4.1911591104876605e-06,
+    "sdr_depois": 9.467399054873201,
+    "melhora": 9.467403246032312
+  },
+  {
+    "id": 3265,
+    "arquivo": "noisy3265_SNRdb_0.0_clnsp3265.wav",
+    "snr": 0.0,
+    "sdr_antes": -6.810634376069702e-06,
+    "sdr_depois": 16.29262538014417,
+    "melhora": 16.292632190778544
+  },
+  {
+    "id": 3561,
+    "arquivo": "noisy3561_SNRdb_5.0_clnsp3561.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000009344722299,
+    "sdr_depois": 20.525377874789204,
+    "melhora": 15.525368530066904
+  },
+  {
+    "id": 3430,
+    "arquivo": "noisy3430_SNRdb_0.0_clnsp3430.wav",
+    "snr": 0.0,
+    "sdr_antes": -6.28673866559753e-06,
+    "sdr_depois": 13.942788946531286,
+    "melhora": 13.942795233269951
+  },
+  {
+    "id": 3457,
+    "arquivo": "noisy3457_SNRdb_0.0_clnsp3457.wav",
+    "snr": 0.0,
+    "sdr_antes": -6.286736011282337e-06,
+    "sdr_depois": 10.8149728423565,
+    "melhora": 10.814979129092512
+  },
+  {
+    "id": 3367,
+    "arquivo": "noisy3367_SNRdb_0.0_clnsp3367.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.2311526545188542e-05,
+    "sdr_depois": 18.23874853921588,
+    "melhora": 18.238736227689333
+  },
+  {
+    "id": 3393,
+    "arquivo": "noisy3393_SNRdb_10.0_clnsp3393.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000007137299058,
+    "sdr_depois": 16.06116013517137,
+    "melhora": 6.061152997872313
+  },
+  {
+    "id": 3439,
+    "arquivo": "noisy3439_SNRdb_10.0_clnsp3439.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999998145517468,
+    "sdr_depois": 16.988195585646466,
+    "melhora": 6.988197440128998
+  },
+  {
+    "id": 3590,
+    "arquivo": "noisy3590_SNRdb_0.0_clnsp3590.wav",
+    "snr": 0.0,
+    "sdr_antes": 3.828198963074526e-06,
+    "sdr_depois": 10.70092215432117,
+    "melhora": 10.700918326122206
+  },
+  {
+    "id": 3585,
+    "arquivo": "noisy3585_SNRdb_15.0_clnsp3585.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999937331121851,
+    "sdr_depois": 19.655706183403765,
+    "melhora": 4.6557688522819145
+  },
+  {
+    "id": 3570,
+    "arquivo": "noisy3570_SNRdb_15.0_clnsp3570.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999984606214888,
+    "sdr_depois": 20.32589693902775,
+    "melhora": 5.325912332812862
+  },
+  {
+    "id": 3241,
+    "arquivo": "noisy3241_SNRdb_5.0_clnsp3241.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999977471079919,
+    "sdr_depois": 15.282263886686383,
+    "melhora": 10.282286415606464
+  },
+  {
+    "id": 3378,
+    "arquivo": "noisy3378_SNRdb_15.0_clnsp3378.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999985105400128,
+    "sdr_depois": 18.678682846415995,
+    "melhora": 3.678697741015867
+  },
+  {
+    "id": 3460,
+    "arquivo": "noisy3460_SNRdb_10.0_clnsp3460.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000019579872617,
+    "sdr_depois": 15.549725722241636,
+    "melhora": 5.549706142369018
+  },
+  {
+    "id": 3509,
+    "arquivo": "noisy3509_SNRdb_5.0_clnsp3509.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.9999734993625555,
+    "sdr_depois": 13.789137240035199,
+    "melhora": 8.789163740672643
+  },
+  {
+    "id": 3394,
+    "arquivo": "noisy3394_SNRdb_5.0_clnsp3394.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000007121614518,
+    "sdr_depois": 14.747374565170542,
+    "melhora": 9.747367443556024
+  },
+  {
+    "id": 3267,
+    "arquivo": "noisy3267_SNRdb_15.0_clnsp3267.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999983607845653,
+    "sdr_depois": 19.064231208263653,
+    "melhora": 4.064247600418
+  },
+  {
+    "id": 3515,
+    "arquivo": "noisy3515_SNRdb_5.0_clnsp3515.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000004866914741,
+    "sdr_depois": 12.48422350183392,
+    "melhora": 7.484218634919179
+  },
+  {
+    "id": 3342,
+    "arquivo": "noisy3342_SNRdb_5.0_clnsp3342.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999984256998717,
+    "sdr_depois": 11.342062502572617,
+    "melhora": 6.3420782455739
+  },
+  {
+    "id": 3324,
+    "arquivo": "noisy3324_SNRdb_5.0_clnsp3324.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.0000050754371035,
+    "sdr_depois": 19.669669655899565,
+    "melhora": 14.669664580462461
+  },
+  {
+    "id": 3379,
+    "arquivo": "noisy3379_SNRdb_0.0_clnsp3379.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.6502708406895602e-05,
+    "sdr_depois": 20.50977459065164,
+    "melhora": 20.509758087943236
+  },
+  {
+    "id": 3426,
+    "arquivo": "noisy3426_SNRdb_10.0_clnsp3426.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000027143365822,
+    "sdr_depois": 18.49533811447831,
+    "melhora": 8.49531097111249
+  },
+  {
+    "id": 3453,
+    "arquivo": "noisy3453_SNRdb_5.0_clnsp3453.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000000859577503,
+    "sdr_depois": 14.08420977126964,
+    "melhora": 9.084208911692137
+  },
+  {
+    "id": 3558,
+    "arquivo": "noisy3558_SNRdb_5.0_clnsp3558.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999984529824783,
+    "sdr_depois": 18.006901323994036,
+    "melhora": 13.006916794169253
+  },
+  {
+    "id": 3535,
+    "arquivo": "noisy3535_SNRdb_5.0_clnsp3535.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999998678980547,
+    "sdr_depois": 20.266075879546253,
+    "melhora": 15.266077200565707
+  },
+  {
+    "id": 3438,
+    "arquivo": "noisy3438_SNRdb_0.0_clnsp3438.wav",
+    "snr": 0.0,
+    "sdr_antes": 8.644274789390722e-06,
+    "sdr_depois": 7.5621400087015775,
+    "melhora": 7.562131364426788
+  },
+  {
+    "id": 3316,
+    "arquivo": "noisy3316_SNRdb_5.0_clnsp3316.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000013316440991,
+    "sdr_depois": 14.29684421824559,
+    "melhora": 9.2968309018046
+  },
+  {
+    "id": 3323,
+    "arquivo": "noisy3323_SNRdb_5.0_clnsp3323.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999976161342263,
+    "sdr_depois": 20.139722232905424,
+    "melhora": 15.13974607156316
+  },
+  {
+    "id": 3471,
+    "arquivo": "noisy3471_SNRdb_10.0_clnsp3471.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000005762079951,
+    "sdr_depois": 16.40470885722938,
+    "melhora": 6.404703095149429
+  },
+  {
+    "id": 3365,
+    "arquivo": "noisy3365_SNRdb_15.0_clnsp3365.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000037996289128,
+    "sdr_depois": 20.731542038262273,
+    "melhora": 5.731504041973144
+  },
+  {
+    "id": 3478,
+    "arquivo": "noisy3478_SNRdb_15.0_clnsp3478.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000028473963665,
+    "sdr_depois": 23.5879599415866,
+    "melhora": 8.587931467622935
+  },
+  {
+    "id": 3544,
+    "arquivo": "noisy3544_SNRdb_0.0_clnsp3544.wav",
+    "snr": 0.0,
+    "sdr_antes": 9.430113685788984e-06,
+    "sdr_depois": 15.72804830503437,
+    "melhora": 15.728038874920685
+  },
+  {
+    "id": 3572,
+    "arquivo": "noisy3572_SNRdb_15.0_clnsp3572.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000059226095246,
+    "sdr_depois": 21.350800173638802,
+    "melhora": 6.350740947543557
+  },
+  {
+    "id": 3533,
+    "arquivo": "noisy3533_SNRdb_10.0_clnsp3533.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999979305422443,
+    "sdr_depois": 21.05473870325643,
+    "melhora": 11.054759397833987
+  },
+  {
+    "id": 3504,
+    "arquivo": "noisy3504_SNRdb_5.0_clnsp3504.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000004941017277,
+    "sdr_depois": 12.941443690741774,
+    "melhora": 7.941438749724497
+  },
+  {
+    "id": 3526,
+    "arquivo": "noisy3526_SNRdb_15.0_clnsp3526.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999936221498565,
+    "sdr_depois": 21.929816458618383,
+    "melhora": 6.929880237119818
+  },
+  {
+    "id": 3347,
+    "arquivo": "noisy3347_SNRdb_15.0_clnsp3347.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000062055084841,
+    "sdr_depois": 21.3647031873578,
+    "melhora": 6.3646411322729595
+  },
+  {
+    "id": 3353,
+    "arquivo": "noisy3353_SNRdb_0.0_clnsp3353.wav",
+    "snr": 0.0,
+    "sdr_antes": -3.514848830590333e-06,
+    "sdr_depois": 12.800852917797128,
+    "melhora": 12.800856432645958
+  },
+  {
+    "id": 3242,
+    "arquivo": "noisy3242_SNRdb_15.0_clnsp3242.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.99996954882269,
+    "sdr_depois": 19.86597307556018,
+    "melhora": 4.86600352673749
+  },
+  {
+    "id": 3583,
+    "arquivo": "noisy3583_SNRdb_15.0_clnsp3583.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.99998628291775,
+    "sdr_depois": 24.049352502731715,
+    "melhora": 9.049366219813965
+  },
+  {
+    "id": 3570,
+    "arquivo": "noisy3570_SNRdb_0.0_clnsp3570.wav",
+    "snr": 0.0,
+    "sdr_antes": -8.120373960083447e-06,
+    "sdr_depois": 10.945163654677845,
+    "melhora": 10.945171775051806
+  },
+  {
+    "id": 3596,
+    "arquivo": "noisy3596_SNRdb_5.0_clnsp3596.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.0000071147245295,
+    "sdr_depois": 16.702214068380407,
+    "melhora": 11.702206953655878
+  },
+  {
+    "id": 3584,
+    "arquivo": "noisy3584_SNRdb_15.0_clnsp3584.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000057743859527,
+    "sdr_depois": 20.054002929611375,
+    "melhora": 5.053945185751848
+  },
+  {
+    "id": 3506,
+    "arquivo": "noisy3506_SNRdb_15.0_clnsp3506.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999934693097298,
+    "sdr_depois": 18.520670608053628,
+    "melhora": 3.5207359149563295
+  },
+  {
+    "id": 3519,
+    "arquivo": "noisy3519_SNRdb_5.0_clnsp3519.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999983786486884,
+    "sdr_depois": 6.473802096942673,
+    "melhora": 1.4738183104557887
+  },
+  {
+    "id": 3336,
+    "arquivo": "noisy3336_SNRdb_5.0_clnsp3336.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999999574542928,
+    "sdr_depois": 13.253329665586582,
+    "melhora": 8.253330091043654
+  },
+  {
+    "id": 3372,
+    "arquivo": "noisy3372_SNRdb_5.0_clnsp3372.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999994951403775,
+    "sdr_depois": 13.882709035121515,
+    "melhora": 8.88271408371774
+  },
+  {
+    "id": 3537,
+    "arquivo": "noisy3537_SNRdb_10.0_clnsp3537.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000010608104262,
+    "sdr_depois": 17.003472555963903,
+    "melhora": 7.003461947859641
+  },
+  {
+    "id": 3439,
+    "arquivo": "noisy3439_SNRdb_15.0_clnsp3439.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999984974657439,
+    "sdr_depois": 20.177235995349236,
+    "melhora": 5.177251020691797
+  },
+  {
+    "id": 3260,
+    "arquivo": "noisy3260_SNRdb_15.0_clnsp3260.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.0000162704716,
+    "sdr_depois": 14.677361091848816,
+    "melhora": -0.32265517862278337
+  },
+  {
+    "id": 3269,
+    "arquivo": "noisy3269_SNRdb_0.0_clnsp3269.wav",
+    "snr": 0.0,
+    "sdr_antes": 4.715055990151534e-06,
+    "sdr_depois": 7.3564830121992175,
+    "melhora": 7.356478297143227
+  },
+  {
+    "id": 3551,
+    "arquivo": "noisy3551_SNRdb_10.0_clnsp3551.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.00001447186274,
+    "sdr_depois": 15.175824336215019,
+    "melhora": 5.17580986435228
+  },
+  {
+    "id": 3413,
+    "arquivo": "noisy3413_SNRdb_0.0_clnsp3413.wav",
+    "snr": 0.0,
+    "sdr_antes": 5.238954887078088e-07,
+    "sdr_depois": 9.949029751805588,
+    "melhora": 9.9490292279101
+  },
+  {
+    "id": 3597,
+    "arquivo": "noisy3597_SNRdb_10.0_clnsp3597.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000003011629044,
+    "sdr_depois": 17.344357681058288,
+    "melhora": 7.344354669429244
+  },
+  {
+    "id": 3285,
+    "arquivo": "noisy3285_SNRdb_0.0_clnsp3285.wav",
+    "snr": 0.0,
+    "sdr_antes": -5.500900148034314e-06,
+    "sdr_depois": 7.750857504523609,
+    "melhora": 7.750863005423757
+  },
+  {
+    "id": 3495,
+    "arquivo": "noisy3495_SNRdb_0.0_clnsp3495.wav",
+    "snr": 0.0,
+    "sdr_antes": 7.858425228075679e-06,
+    "sdr_depois": 8.401631793770335,
+    "melhora": 8.401623935345107
+  },
+  {
+    "id": 3427,
+    "arquivo": "noisy3427_SNRdb_0.0_clnsp3427.wav",
+    "snr": 0.0,
+    "sdr_antes": 3.6672653271458194e-06,
+    "sdr_depois": 12.488965797413623,
+    "melhora": 12.488962130148296
+  },
+  {
+    "id": 3548,
+    "arquivo": "noisy3548_SNRdb_5.0_clnsp3548.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.00000537255231,
+    "sdr_depois": 14.495909674385356,
+    "melhora": 9.495904301833047
+  },
+  {
+    "id": 3319,
+    "arquivo": "noisy3319_SNRdb_10.0_clnsp3319.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000044006642334,
+    "sdr_depois": 15.842305651455977,
+    "melhora": 5.842261644813643
+  },
+  {
+    "id": 3493,
+    "arquivo": "noisy3493_SNRdb_15.0_clnsp3493.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.0000657655245,
+    "sdr_depois": 21.67380428136411,
+    "melhora": 6.673738515839609
+  },
+  {
+    "id": 3416,
+    "arquivo": "noisy3416_SNRdb_0.0_clnsp3416.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.0477911679791908e-05,
+    "sdr_depois": 11.403092757419898,
+    "melhora": 11.403082279508219
+  },
+  {
+    "id": 3402,
+    "arquivo": "noisy3402_SNRdb_0.0_clnsp3402.wav",
+    "snr": 0.0,
+    "sdr_antes": -1.047788955806971e-06,
+    "sdr_depois": 11.225723112412659,
+    "melhora": 11.225724160201615
+  },
+  {
+    "id": 3565,
+    "arquivo": "noisy3565_SNRdb_0.0_clnsp3565.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.1001798636418518e-05,
+    "sdr_depois": 9.752445703260943,
+    "melhora": 9.752434701462306
+  },
+  {
+    "id": 3470,
+    "arquivo": "noisy3470_SNRdb_10.0_clnsp3470.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999994964549092,
+    "sdr_depois": 15.59538570219219,
+    "melhora": 5.595390737643097
+  },
+  {
+    "id": 3492,
+    "arquivo": "noisy3492_SNRdb_10.0_clnsp3492.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999946863342675,
+    "sdr_depois": 18.434806015560564,
+    "melhora": 8.43485915221789
+  },
+  {
+    "id": 3549,
+    "arquivo": "noisy3549_SNRdb_15.0_clnsp3549.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.00005519817429,
+    "sdr_depois": 20.30696198976929,
+    "melhora": 5.306906791595003
+  },
+  {
+    "id": 3560,
+    "arquivo": "noisy3560_SNRdb_10.0_clnsp3560.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000001570913383,
+    "sdr_depois": 18.035585849721723,
+    "melhora": 8.03558427880834
+  },
+  {
+    "id": 3514,
+    "arquivo": "noisy3514_SNRdb_10.0_clnsp3514.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000005172694152,
+    "sdr_depois": 20.255839934429414,
+    "melhora": 10.255834761735262
+  },
+  {
+    "id": 3477,
+    "arquivo": "noisy3477_SNRdb_10.0_clnsp3477.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000016240013114,
+    "sdr_depois": 17.911080267179756,
+    "melhora": 7.911064027166642
+  },
+  {
+    "id": 3295,
+    "arquivo": "noisy3295_SNRdb_15.0_clnsp3295.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.99996400878806,
+    "sdr_depois": 19.520406314930582,
+    "melhora": 4.520442306142522
+  },
+  {
+    "id": 3599,
+    "arquivo": "noisy3599_SNRdb_0.0_clnsp3599.wav",
+    "snr": 0.0,
+    "sdr_antes": -2.6194764980549895e-06,
+    "sdr_depois": 9.776248140215932,
+    "melhora": 9.77625075969243
+  },
+  {
+    "id": 3321,
+    "arquivo": "noisy3321_SNRdb_10.0_clnsp3321.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000026128540023,
+    "sdr_depois": 20.64961732218267,
+    "melhora": 10.649591193642648
+  },
+  {
+    "id": 3533,
+    "arquivo": "noisy3533_SNRdb_15.0_clnsp3533.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999947124373849,
+    "sdr_depois": 22.023728797496375,
+    "melhora": 7.023781673122526
+  },
+  {
+    "id": 3580,
+    "arquivo": "noisy3580_SNRdb_15.0_clnsp3580.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999992452288154,
+    "sdr_depois": 18.314517341425955,
+    "melhora": 3.3145248891378003
+  },
+  {
+    "id": 3570,
+    "arquivo": "noisy3570_SNRdb_5.0_clnsp3570.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.99999278860905,
+    "sdr_depois": 14.091070592835706,
+    "melhora": 9.091077804226657
+  },
+  {
+    "id": 3531,
+    "arquivo": "noisy3531_SNRdb_5.0_clnsp3531.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000005026035595,
+    "sdr_depois": 13.229659169562769,
+    "melhora": 8.229654143527174
+  },
+  {
+    "id": 3362,
+    "arquivo": "noisy3362_SNRdb_5.0_clnsp3362.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999971229699115,
+    "sdr_depois": 13.875087826634475,
+    "melhora": 8.87511659693536
+  },
+  {
+    "id": 3434,
+    "arquivo": "noisy3434_SNRdb_15.0_clnsp3434.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999968086526662,
+    "sdr_depois": 19.639954737744752,
+    "melhora": 4.63998665121809
+  },
+  {
+    "id": 3411,
+    "arquivo": "noisy3411_SNRdb_5.0_clnsp3411.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000007663319237,
+    "sdr_depois": 15.97901575593037,
+    "melhora": 10.979008092611132
+  },
+  {
+    "id": 3417,
+    "arquivo": "noisy3417_SNRdb_0.0_clnsp3417.wav",
+    "snr": 0.0,
+    "sdr_antes": -3.929211784328321e-06,
+    "sdr_depois": 15.35929825425959,
+    "melhora": 15.359302183471375
+  },
+  {
+    "id": 3499,
+    "arquivo": "noisy3499_SNRdb_5.0_clnsp3499.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999976982764268,
+    "sdr_depois": 21.016908579227444,
+    "melhora": 16.016931596463174
+  },
+  {
+    "id": 3572,
+    "arquivo": "noisy3572_SNRdb_0.0_clnsp3572.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.2573495532306472e-05,
+    "sdr_depois": 18.209102172503602,
+    "melhora": 18.20908959900807
+  },
+  {
+    "id": 3550,
+    "arquivo": "noisy3550_SNRdb_0.0_clnsp3550.wav",
+    "snr": 0.0,
+    "sdr_antes": 5.926842418376605e-06,
+    "sdr_depois": 11.032195194469175,
+    "melhora": 11.032189267626757
+  },
+  {
+    "id": 3296,
+    "arquivo": "noisy3296_SNRdb_5.0_clnsp3296.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.0000286094268445,
+    "sdr_depois": 14.961723174991842,
+    "melhora": 9.961694565564997
+  },
+  {
+    "id": 3266,
+    "arquivo": "noisy3266_SNRdb_15.0_clnsp3266.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999987980648694,
+    "sdr_depois": 18.967096738879633,
+    "melhora": 3.967108758230939
+  },
+  {
+    "id": 3370,
+    "arquivo": "noisy3370_SNRdb_0.0_clnsp3370.wav",
+    "snr": 0.0,
+    "sdr_antes": -2.0734278161885708e-05,
+    "sdr_depois": 13.163738244838786,
+    "melhora": 13.163758979116947
+  },
+  {
+    "id": 3376,
+    "arquivo": "noisy3376_SNRdb_10.0_clnsp3376.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000008905442744,
+    "sdr_depois": 21.242579446091312,
+    "melhora": 11.242570540648568
+  },
+  {
+    "id": 3510,
+    "arquivo": "noisy3510_SNRdb_5.0_clnsp3510.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.0000133520688586,
+    "sdr_depois": 10.787850172853762,
+    "melhora": 5.787836820784904
+  },
+  {
+    "id": 3268,
+    "arquivo": "noisy3268_SNRdb_10.0_clnsp3268.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000013199694536,
+    "sdr_depois": 16.96155907598009,
+    "melhora": 6.961545876285555
+  },
+  {
+    "id": 3498,
+    "arquivo": "noisy3498_SNRdb_10.0_clnsp3498.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000000064714316,
+    "sdr_depois": 22.193845709549336,
+    "melhora": 12.19384564483502
+  },
+  {
+    "id": 3414,
+    "arquivo": "noisy3414_SNRdb_15.0_clnsp3414.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000064868658164,
+    "sdr_depois": 18.776393163650845,
+    "melhora": 3.7763282949926804
+  },
+  {
+    "id": 3257,
+    "arquivo": "noisy3257_SNRdb_15.0_clnsp3257.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.00003407016132,
+    "sdr_depois": 20.00012275235556,
+    "melhora": 5.000088682194239
+  },
+  {
+    "id": 3476,
+    "arquivo": "noisy3476_SNRdb_5.0_clnsp3476.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000009047152824,
+    "sdr_depois": 12.533451440060464,
+    "melhora": 7.53344239290764
+  },
+  {
+    "id": 3413,
+    "arquivo": "noisy3413_SNRdb_15.0_clnsp3413.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.00001827035904,
+    "sdr_depois": 20.371707975297795,
+    "melhora": 5.371689704938754
+  },
+  {
+    "id": 3501,
+    "arquivo": "noisy3501_SNRdb_15.0_clnsp3501.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.99983367856641,
+    "sdr_depois": 19.296252227281208,
+    "melhora": 4.296418548714797
+  },
+  {
+    "id": 3507,
+    "arquivo": "noisy3507_SNRdb_0.0_clnsp3507.wav",
+    "snr": 0.0,
+    "sdr_antes": -3.4053199605307625e-06,
+    "sdr_depois": 18.298829436280553,
+    "melhora": 18.298832841600515
+  },
+  {
+    "id": 3388,
+    "arquivo": "noisy3388_SNRdb_15.0_clnsp3388.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999892553399125,
+    "sdr_depois": 18.231957521460764,
+    "melhora": 3.232064968061639
+  },
+  {
+    "id": 3270,
+    "arquivo": "noisy3270_SNRdb_10.0_clnsp3270.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000004976224876,
+    "sdr_depois": 16.612921534498014,
+    "melhora": 6.612916558273138
+  },
+  {
+    "id": 3366,
+    "arquivo": "noisy3366_SNRdb_5.0_clnsp3366.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.9999951530422235,
+    "sdr_depois": 12.840701355480999,
+    "melhora": 7.840706202438775
+  },
+  {
+    "id": 3591,
+    "arquivo": "noisy3591_SNRdb_5.0_clnsp3591.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999999457924479,
+    "sdr_depois": 12.794035989835212,
+    "melhora": 7.794036531910733
+  },
+  {
+    "id": 3444,
+    "arquivo": "noisy3444_SNRdb_0.0_clnsp3444.wav",
+    "snr": 0.0,
+    "sdr_antes": -9.361878520431363e-06,
+    "sdr_depois": 9.040676648598247,
+    "melhora": 9.040686010476767
+  },
+  {
+    "id": 3243,
+    "arquivo": "noisy3243_SNRdb_15.0_clnsp3243.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000031010111453,
+    "sdr_depois": 19.980361908837757,
+    "melhora": 4.980330898726304
+  },
+  {
+    "id": 3588,
+    "arquivo": "noisy3588_SNRdb_10.0_clnsp3588.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000005401064659,
+    "sdr_depois": 18.018630144599463,
+    "melhora": 8.018624743534804
+  },
+  {
+    "id": 3258,
+    "arquivo": "noisy3258_SNRdb_10.0_clnsp3258.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.99998316911751,
+    "sdr_depois": 20.7351670859855,
+    "melhora": 10.735183916867989
+  },
+  {
+    "id": 3408,
+    "arquivo": "noisy3408_SNRdb_10.0_clnsp3408.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999994760279861,
+    "sdr_depois": 15.110794862881505,
+    "melhora": 5.110800102601644
+  },
+  {
+    "id": 3512,
+    "arquivo": "noisy3512_SNRdb_10.0_clnsp3512.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999974852350183,
+    "sdr_depois": 16.997094239851982,
+    "melhora": 6.997119387501799
+  },
+  {
+    "id": 3343,
+    "arquivo": "noisy3343_SNRdb_10.0_clnsp3343.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999982055851627,
+    "sdr_depois": 21.097941902460295,
+    "melhora": 11.097959846608669
+  },
+  {
+    "id": 3470,
+    "arquivo": "noisy3470_SNRdb_0.0_clnsp3470.wav",
+    "snr": 0.0,
+    "sdr_antes": -6.7124668857963225e-06,
+    "sdr_depois": 10.415217638544746,
+    "melhora": 10.415224351011632
+  },
+  {
+    "id": 3399,
+    "arquivo": "noisy3399_SNRdb_5.0_clnsp3399.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.9999919780585635,
+    "sdr_depois": 14.240781547738289,
+    "melhora": 9.240789569679725
+  },
+  {
+    "id": 3563,
+    "arquivo": "noisy3563_SNRdb_15.0_clnsp3563.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999998708141064,
+    "sdr_depois": 20.165297844895285,
+    "melhora": 5.165299136754221
+  },
+  {
+    "id": 3271,
+    "arquivo": "noisy3271_SNRdb_5.0_clnsp3271.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.00001149373843,
+    "sdr_depois": 13.876209243277584,
+    "melhora": 8.876197749539154
+  },
+  {
+    "id": 3415,
+    "arquivo": "noisy3415_SNRdb_15.0_clnsp3415.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000115119312692,
+    "sdr_depois": 18.230668344922538,
+    "melhora": 3.230553225609846
+  },
+  {
+    "id": 3253,
+    "arquivo": "noisy3253_SNRdb_5.0_clnsp3253.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000014654924679,
+    "sdr_depois": 16.017794735815617,
+    "melhora": 11.017780080890937
+  },
+  {
+    "id": 3371,
+    "arquivo": "noisy3371_SNRdb_0.0_clnsp3371.wav",
+    "snr": 0.0,
+    "sdr_antes": -9.201129677836085e-06,
+    "sdr_depois": 11.263409930099106,
+    "melhora": 11.263419131228785
+  },
+  {
+    "id": 3354,
+    "arquivo": "noisy3354_SNRdb_10.0_clnsp3354.wav",
+    "snr": 10.0,
+    "sdr_antes": 9.999965946129553,
+    "sdr_depois": 22.485777740019508,
+    "melhora": 12.485811793889955
+  },
+  {
+    "id": 3269,
+    "arquivo": "noisy3269_SNRdb_10.0_clnsp3269.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000004714283474,
+    "sdr_depois": 14.545991266412074,
+    "melhora": 4.5459865521286
+  },
+  {
+    "id": 3546,
+    "arquivo": "noisy3546_SNRdb_15.0_clnsp3546.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999963811205925,
+    "sdr_depois": 19.449552718142172,
+    "melhora": 4.449588906936247
+  },
+  {
+    "id": 3308,
+    "arquivo": "noisy3308_SNRdb_5.0_clnsp3308.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999992430754374,
+    "sdr_depois": 18.055959734466512,
+    "melhora": 13.055967303712137
+  },
+  {
+    "id": 3246,
+    "arquivo": "noisy3246_SNRdb_0.0_clnsp3246.wav",
+    "snr": 0.0,
+    "sdr_antes": -8.644271660812012e-06,
+    "sdr_depois": 7.304733455201813,
+    "melhora": 7.304742099473474
+  },
+  {
+    "id": 3582,
+    "arquivo": "noisy3582_SNRdb_5.0_clnsp3582.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.99999502552046,
+    "sdr_depois": 13.0331042529282,
+    "melhora": 8.033109227407742
+  },
+  {
+    "id": 3505,
+    "arquivo": "noisy3505_SNRdb_15.0_clnsp3505.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000024267374577,
+    "sdr_depois": 22.921996830182568,
+    "melhora": 7.921972562807991
+  },
+  {
+    "id": 3294,
+    "arquivo": "noisy3294_SNRdb_10.0_clnsp3294.wav",
+    "snr": 10.0,
+    "sdr_antes": 10.000000785070268,
+    "sdr_depois": 15.298001256311322,
+    "melhora": 5.298000471241053
+  },
+  {
+    "id": 3325,
+    "arquivo": "noisy3325_SNRdb_0.0_clnsp3325.wav",
+    "snr": 0.0,
+    "sdr_antes": -1.309736629390767e-06,
+    "sdr_depois": 9.039715680363573,
+    "melhora": 9.039716990100203
+  },
+  {
+    "id": 3308,
+    "arquivo": "noisy3308_SNRdb_15.0_clnsp3308.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999974101140516,
+    "sdr_depois": 19.44707394190288,
+    "melhora": 4.4470998407623625
+  },
+  {
+    "id": 3505,
+    "arquivo": "noisy3505_SNRdb_0.0_clnsp3505.wav",
+    "snr": 0.0,
+    "sdr_antes": 4.453109911995896e-06,
+    "sdr_depois": 19.973579525013513,
+    "melhora": 19.9735750719036
+  },
+  {
+    "id": 3429,
+    "arquivo": "noisy3429_SNRdb_5.0_clnsp3429.wav",
+    "snr": 5.0,
+    "sdr_antes": 5.000005177528805,
+    "sdr_depois": 11.632882888912079,
+    "melhora": 6.632877711383274
+  },
+  {
+    "id": 3487,
+    "arquivo": "noisy3487_SNRdb_15.0_clnsp3487.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000073291006153,
+    "sdr_depois": 18.52328292494105,
+    "melhora": 3.523209633934897
+  },
+  {
+    "id": 3283,
+    "arquivo": "noisy3283_SNRdb_15.0_clnsp3283.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999965512492238,
+    "sdr_depois": 20.16391792213561,
+    "melhora": 5.163952409643372
+  },
+  {
+    "id": 3287,
+    "arquivo": "noisy3287_SNRdb_5.0_clnsp3287.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.9999933975186215,
+    "sdr_depois": 11.292944185969427,
+    "melhora": 6.292950788450805
+  },
+  {
+    "id": 3251,
+    "arquivo": "noisy3251_SNRdb_15.0_clnsp3251.wav",
+    "snr": 15.0,
+    "sdr_antes": 14.999950779274311,
+    "sdr_depois": 18.689892883661486,
+    "melhora": 3.6899421043871747
+  },
+  {
+    "id": 3451,
+    "arquivo": "noisy3451_SNRdb_5.0_clnsp3451.wav",
+    "snr": 5.0,
+    "sdr_antes": 4.999984012845856,
+    "sdr_depois": 11.899361233097935,
+    "melhora": 6.899377220252078
+  },
+  {
+    "id": 3568,
+    "arquivo": "noisy3568_SNRdb_0.0_clnsp3568.wav",
+    "snr": 0.0,
+    "sdr_antes": 9.168154747303438e-06,
+    "sdr_depois": 7.805103432286882,
+    "melhora": 7.805094264132134
+  },
+  {
+    "id": 3537,
+    "arquivo": "noisy3537_SNRdb_0.0_clnsp3537.wav",
+    "snr": 0.0,
+    "sdr_antes": 1.0215954953024263e-05,
+    "sdr_depois": 12.448881853850114,
+    "melhora": 12.448871637895161
+  },
+  {
+    "id": 3567,
+    "arquivo": "noisy3567_SNRdb_0.0_clnsp3567.wav",
+    "snr": 0.0,
+    "sdr_antes": -3.667262009627569e-06,
+    "sdr_depois": 9.701851582327919,
+    "melhora": 9.70185524958993
+  },
+  {
+    "id": 3449,
+    "arquivo": "noisy3449_SNRdb_0.0_clnsp3449.wav",
+    "snr": 0.0,
+    "sdr_antes": -8.906207737500867e-06,
+    "sdr_depois": 9.973872104965448,
+    "melhora": 9.973881011173185
+  },
+  {
+    "id": 3456,
+    "arquivo": "noisy3456_SNRdb_15.0_clnsp3456.wav",
+    "snr": 15.0,
+    "sdr_antes": 15.000015479329477,
+    "sdr_depois": 19.858297008762804,
+    "melhora": 4.858281529433327
+  }
+]

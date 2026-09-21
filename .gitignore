@@ -1,0 +1,50 @@
+# Datasets / generated audio
+dataset/
+*.tfrecord
+*.wav
+*.npz
+
+# Models / training artifacts
+models/
+*.keras
+*.h5
+*.v2
+
+# Logs
+logs/
+logs_v2/
+
+# Generated outputs
+artifacts/
+search_results/
+search_results_*/
+
+# TFRecords directories
+tfrecords/
+tfrecords_v2/
+tfrecords_park/
+tfrecords_*/
+
+# Archive of stale artifacts (large; do not commit)
+archive/
+
+# Python / venv
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.DS_Store
+
+# Stale experimental paths
+my_dir/
+my_dir*/
+vrau/
+8k_tuner/
+old/
+new/
+
+#latex tcc
+tcc/
