@@ -1,0 +1,27 @@
+{
+  "modelo": "models/runs/park_rced_park_data/best.keras",
+  "n_arquivos": 200,
+  "melhora_media_geral_dB": 8.545994729416718,
+  "por_snr": {
+    "0": {
+      "n": 47,
+      "melhora_media_dB": 11.700677454215393,
+      "melhora_mediana_dB": 11.032189267626757
+    },
+    "5": {
+      "n": 54,
+      "melhora_media_dB": 9.906586932469546,
+      "melhora_mediana_dB": 9.087643357959397
+    },
+    "10": {
+      "n": 45,
+      "melhora_media_dB": 7.836096996636755,
+      "melhora_mediana_dB": 7.344354669429244
+    },
+    "15": {
+      "n": 54,
+      "melhora_media_dB": 5.0312415987631525,
+      "melhora_mediana_dB": 4.862142528085409
+    }
+  }
+}
